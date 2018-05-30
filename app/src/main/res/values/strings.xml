@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BestMall</string>
+    <string name="title_activity_rating_view">RatingView</string>
 </resources>
