@@ -36,7 +36,6 @@ public class MallAdapter extends RecyclerView.Adapter<MallAdapter.MallViewHolder
         holder.title.setText(mall.getTitle());
         holder.city.setText(mall.getCity());
         //Todo: calculate the distance after merg the branch from amjad
-        //Todo: do the Implementation for the Location
         holder.dist.setText("22km");
         //Todo: add a rating calculator
         holder.ratingBar.setEnabled(false);
@@ -57,7 +56,7 @@ public class MallAdapter extends RecyclerView.Adapter<MallAdapter.MallViewHolder
 
         public MallViewHolder(View itemView) {
             super(itemView);
-            title   = (TextView) itemView.findViewById(R.id.mallListLayoutTitle);#
+            title   = (TextView) itemView.findViewById(R.id.mallListLayoutTitle);
             city    = (TextView) itemView.findViewById(R.id.mallListCity);
             dist    = (TextView) itemView.findViewById(R.id.mallListDistance);
             ratingBar   = (RatingBar) itemView.findViewById(R.id.mallListLayoutRatingbar);
