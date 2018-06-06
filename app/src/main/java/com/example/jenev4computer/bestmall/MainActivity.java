@@ -38,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
                  if((tv_email.getText().toString().equals(testmail)) && (tv_password.getText().toString().equals(testPassword)) ){
 
 
-                     Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("google.navigation:q=Modemannstr.2 51065"));
-                     startActivity(intent);
-                     //Intent intent = new Intent(MainActivity.this, ListMapActivity.class);
+                     //Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("google.navigation:q=Modemannstr.2 51065"));
                      //startActivity(intent);
+                     Intent intent = new Intent(MainActivity.this, ListMapActivity.class);
+                     startActivity(intent);
 
                  }else{
 
