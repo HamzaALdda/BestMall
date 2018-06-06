@@ -41,6 +41,7 @@ public class MallAdapter extends RecyclerView.Adapter<MallAdapter.MallViewHolder
         holder.ratingBar.setEnabled(false);
         holder.ratingBar.setRating(4.4f);
 
+
     }
 
     @Override

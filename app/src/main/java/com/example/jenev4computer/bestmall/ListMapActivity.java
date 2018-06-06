@@ -64,7 +64,6 @@ public class ListMapActivity extends AppCompatActivity {
 
         textView_input = (EditText) findViewById(R.id.listView_textField_input);
 
-        linearLayout = findViewById(R.id.listView_linearyLayout);
 
         btn_search  = (ImageButton) findViewById(R.id.listView_btn_search);
         btn_list    = (ImageButton) findViewById(R.id.listView_btn_list);
