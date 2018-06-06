@@ -35,8 +35,9 @@ public class MallAdapter extends RecyclerView.Adapter<MallAdapter.MallViewHolder
 
         holder.title.setText(mall.getTitle());
         holder.city.setText(mall.getCity());
-        //Todo: calculate the distance after merg the branch from amjad
-        holder.dist.setText("22km");
+
+        Utilities utilities = new Utilities();
+        holder.dist.setText(""+ utilities.getDistanceBetween2Coord(51.022740, 7.562001 ,mall.getLatitude(),mall.getLongitude())+" Km");
         //Todo: add a rating calculator
         holder.ratingBar.setEnabled(false);
         holder.ratingBar.setRating(4.4f);
