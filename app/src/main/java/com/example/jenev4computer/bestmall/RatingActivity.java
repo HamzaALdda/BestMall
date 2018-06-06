@@ -47,6 +47,9 @@ public class RatingActivity extends AppCompatActivity {
 
 
                 ratingbarTotal.setRating((r1+r2+r3) / 3);
+
+                Utilities u = new Utilities();
+                tv_title.setText((u.distance(32.9697, -96.80322, 29.46786, -98.53506) + " Kilometers\n"));
             }
         });
 
