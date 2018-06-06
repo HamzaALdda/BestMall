@@ -26,8 +26,6 @@ public class DetailViewActivity extends AppCompatActivity {
     private String navToAdress;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
