@@ -69,10 +69,17 @@
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/ratingView_textField_comment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Add Your Opinion" />
         </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/ratingView_btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
 
         <TableLayout
             android:id="@+id/tl_ar_1"

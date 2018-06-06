@@ -18,7 +18,7 @@ public class RatingActivity extends AppCompatActivity {
     private RatingBar ratingbar1;
     private RatingBar ratingbar2;
     private RatingBar ratingbar3;
-    private RatingBar ratingbar4;
+    private RatingBar ratingbarTotal;
 
 
     @Override
@@ -35,29 +35,29 @@ public class RatingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btn_submit = findViewById(R.id.btn_ar_submit);
+        btn_submit = findViewById(R.id.ratingView_btn_submit);
         btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //your code
 
-
+                float r1 = ratingbar1.getRating();
                 float r2 = ratingbar2.getRating();
                 float r3 = ratingbar3.getRating();
-                float r4 = ratingbar4.getRating();
 
-                ratingbar1.setRating((r4+r2+r3) / 3);
+
+                ratingbarTotal.setRating((r1+r2+r3) / 3);
             }
         });
 
 
         tv_title = findViewById(R.id.tv_ar_headline);
-        ti_opinion = findViewById(R.id.ti_ar);
+        ti_opinion = findViewById(R.id.ratingView_textField_comment);
         ratingbar1 = (RatingBar) findViewById(R.id.ar_ratingBar_rate1);
-        ratingbar1.setEnabled(false);
         ratingbar2 = (RatingBar) findViewById(R.id.ar_ratingBar_rate2);
         ratingbar3 = (RatingBar) findViewById(R.id.ar_ratingBar_rate3);
-        ratingbar4 = (RatingBar) findViewById(R.id.ar_ratingBar_rate4);
+        ratingbarTotal = (RatingBar) findViewById(R.id.ar_ratingBar_total);
+        ratingbarTotal.setEnabled(false);
 
 
     }
