@@ -61,55 +61,6 @@ public class ListMapActivity extends AppCompatActivity {
             }
         });
 
-
-        // change this and loop for each entry in the DB for the Malls
-        for (int i= 0; i<10;i++){
-
-            //First Line Title and ratingbar
-            LinearLayout firstLine = new LinearLayout(this);
-            firstLine.setOrientation(LinearLayout.HORIZONTAL);
-
-            TextView title = new TextView(this);
-            title.setText("Forum Gummersbach");
-            title.setTextSize(20);
-
-            RatingBar ratingBar = new RatingBar(this);
-            ratingBar.setEnabled(false);
-
-            firstLine.addView(title);
-            firstLine.addView(ratingBar);
-
-            //Seconde Line Img - City(Text) - img - dist(Text)
-
-            LinearLayout secondeLine = new LinearLayout(this);
-            secondeLine.setOrientation(LinearLayout.HORIZONTAL);
-
-            Image img_cityLoc;
-            Image img_dist;
-            TextView city = new TextView(this);
-            TextView dist = new TextView(this);
-
-            city.setText("Gummersbach");
-            dist.setText("22km");
-
-            secondeLine.addView(city);
-            secondeLine.addView(dist);
-
-            LinearLayout panel = new LinearLayout(this);
-            panel.setOrientation(LinearLayout.VERTICAL);
-            panel.addView(firstLine);
-            panel.addView(secondeLine);
-            panel.setBackgroundColor(Color.rgb(128,128,128));
-
-            panel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(ListMapActivity.this, DetailViewActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            linearLayout.addView(panel);
-        }
     }
+
 }
