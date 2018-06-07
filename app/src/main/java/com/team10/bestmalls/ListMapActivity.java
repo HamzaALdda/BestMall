@@ -10,7 +10,6 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.jenev4computer.bestmall.R;
 
 import java.util.ArrayList;
 import java.util.List;

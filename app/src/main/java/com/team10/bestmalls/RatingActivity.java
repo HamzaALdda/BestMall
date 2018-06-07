@@ -9,7 +9,6 @@ import android.widget.ImageButton;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.example.jenev4computer.bestmall.R;
 
 public class RatingActivity extends AppCompatActivity {
 

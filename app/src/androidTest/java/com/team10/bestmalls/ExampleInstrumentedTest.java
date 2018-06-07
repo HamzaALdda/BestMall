@@ -1,4 +1,4 @@
-package com.example.jenev4computer.bestmall;
+package com.team10.bestmalls;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
