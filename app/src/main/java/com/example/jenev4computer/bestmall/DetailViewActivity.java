@@ -25,6 +25,9 @@ public class DetailViewActivity extends AppCompatActivity {
     private TextView  description;
     private String navToAdress;
 
+    private Mall mall;
+    private double longitude;
+    private double latitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +66,12 @@ public class DetailViewActivity extends AppCompatActivity {
         ratingbar2 = (RatingBar) findViewById(R.id.adv_ratingBar_rate2);
         ratingbar3 = (RatingBar) findViewById(R.id.adv_ratingBar_rate3);
 
+        title.setText(getIntent().getStringExtra("title"));
+        description.setText(getIntent().getStringExtra("description"));
+        latitude = getIntent().getDoubleExtra("latitude",0);
+        longitude = getIntent().getDoubleExtra("longitude",0);
 
-
-
+        navToAdress = "google.navigation:q="+latitude+","+longitude+"";
 
     }
 }
