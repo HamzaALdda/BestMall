@@ -1,4 +1,4 @@
-package com.example.jenev4computer.bestmall;
+package com.team10.bestmalls;
 
 import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import com.example.jenev4computer.bestmall.R;
 
 public class RatingActivity extends AppCompatActivity {
 
