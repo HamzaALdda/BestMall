@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:layout_margin="5sp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8sp">
+
+            <TextView
+                android:id="@+id/commentLayoutUsernamer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="sulemanzkl@test.com"
+                />
+
+
+            <TextView
+                android:id="@+id/commentLayoutComment"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/commentLayoutUsernamer"
+                android:layout_toRightOf="@+id/mallListImage"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="Gummersbach"
+                />
+            <TextView
+                android:id="@+id/commentLayoutDate"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/commentLayoutComment"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:text="28.02.2017"
+                />
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
