@@ -17,7 +17,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
     private Context mCtx;
     private List<Comment> commentList;
 
-    public CommentAdapter(Context mCtx, List<Mall> mallList) {
+    public CommentAdapter(Context mCtx, List<Comment> commentList) {
         this.mCtx = mCtx;
         this.commentList = commentList;
     }
@@ -28,11 +28,8 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
     public CommentViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
         //Todo: change the LayoutFrom RaitingVIew and complete the code below
-        //View view = inflater.inflate(R.id.
-        //return new CommentViewHolder(new View());
-
-        return null;
-
+        View view = inflater.inflate(R.layout.comment_layout,null);
+        return new CommentViewHolder(view);
     }
 
     @Override
@@ -46,6 +43,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
 
     @Override
     public int getItemCount() {
+
        return commentList.size();
     }
 
