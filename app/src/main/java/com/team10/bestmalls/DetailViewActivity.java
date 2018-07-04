@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -15,6 +16,8 @@ public class DetailViewActivity extends AppCompatActivity {
 
     private ImageButton btn_back;
     private ImageButton btn_navigateto;
+    private Button      btn_viewRating;
+
     private ImageView img_mall;
     private RatingBar ratingbar_total;
     private RatingBar ratingbar1;
@@ -57,6 +60,19 @@ public class DetailViewActivity extends AppCompatActivity {
 
                }
         });
+
+
+        btn_viewRating = (Button) findViewById(R.id.btn_adv_viewRating);
+        btn_viewRating.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailViewActivity.this, RatingActivity.class);
+                intent.putExtra("title", title.getText());
+                startActivity(intent);
+            }
+        });
+
+
 
 
         img_mall = (ImageView) findViewById(R.id.image_adv_mallpic);
